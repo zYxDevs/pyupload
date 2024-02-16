@@ -7,11 +7,7 @@ from pyupload.uploader import *
 
 
 def generate_random_file_content():
-    result = ''
-    for _ in range(30):
-        result += choice(ascii_letters)
-
-    return result
+    return ''.join(choice(ascii_letters) for _ in range(30))
 
 
 class TestUploadMethods(unittest.TestCase):

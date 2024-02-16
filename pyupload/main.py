@@ -16,7 +16,7 @@ def upload(host, name):
     uploader_class = uploader_classes[host]
     uploader_instance = uploader_class(name)
     result = uploader_instance.execute()
-    print("Your link : {}".format(result))
+    print(f"Your link : {result}")
 
 
 if __name__ == "__main__":
